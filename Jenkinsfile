@@ -9,7 +9,6 @@ pipeline {
         }
          stage('build') {
             steps {
-                
                 git branch: 'main', credentialsId: 'MyGitHub', url: 'https://github.com/Jihene2/JenkinsToxrayProject.git'
                 bat'mvn test'
                 
