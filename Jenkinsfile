@@ -13,6 +13,7 @@ pipeline {
                 git branch: 'main', credentialsId: 'MyGitHub', url: 'https://github.com/Jihene2/JenkinsToxrayProject.git'
                 bat'mvn test'
                 step([$class: 'JiraIssueUpdateBuilder', jqlSearch: 'issue = $TALAC-814'])
+                jiraComment body: 'test ended', issueKey: 'TALAC-814'
                 
                 
    
