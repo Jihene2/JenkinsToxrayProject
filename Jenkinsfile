@@ -13,6 +13,7 @@ pipeline {
                 git branch: 'main', credentialsId: 'MyGitHub', url: 'https://github.com/Jihene2/JenkinsToxrayProject.git'
                 bat'mvn test'
                 jiraIssueSelector(issueSelector: [$class: 'ExplicitIssueSelector', issueKeys: 'TALAC-816'])
+                jiraIssueSelector(issueSelector: [$class: 'ExplicitIssueSelector', issueKeys: 'TALAC-816'])
                 step([$class: 'XrayImportBuilder', endpointName: '', importFilePath: 'target/jihene.json', importInParallel: 'false', serverInstance: 'SERVER-451b35e9-535d-4f52-bc37-28f4215cf1ea'])
                 
                 
