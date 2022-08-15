@@ -1,0 +1,161 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-08-15T13:07:14.066Z",
+        "line": 16,
+        "name": "verify that the user can create a checklist",
+        "description": "",
+        "id": "acces-to-the-website;verify-that-the-user-can-create-a-checklist;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6995000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "browser is open user put the link of the website",
+            "match": {
+              "location": "stepdefs.accesSteps.openBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 384000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "write Etudier and clicks enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Etudier",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefs.accesSteps.write_to_do(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 105000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "write analyser and clicks enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "analyser",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefs.accesSteps.write_to_do(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "write soumettre and clicks enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "soumettre",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefs.accesSteps.write_to_do(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the writen Etudier will be added to the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Etudier",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefs.accesSteps.the_writen_ToDo_will_be_added_to_the_list(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the writen analyser will be added to the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "analyser",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefs.accesSteps.the_writen_ToDo_will_be_added_to_the_list(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the writen soumettre will be added to the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "soumettre",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefs.accesSteps.the_writen_ToDo_will_be_added_to_the_list(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@scenario"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Acces to the website",
+    "description": "",
+    "id": "acces-to-the-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Access.feature",
+    "tags": [
+      {
+        "name": "@scenario",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
