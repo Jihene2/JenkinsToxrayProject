@@ -9,7 +9,7 @@ pipeline {
         }
          stage('build') {
             steps {
-                jiraComment body: 'this is from jenkins', issueKey: 'fromjenkinstoxray-jihene'
+                jiraComment body: 'this is from jenkins', issueKey: 'TALAC-814'
                 git branch: 'main', credentialsId: 'MyGitHub', url: 'https://github.com/Jihene2/JenkinsToxrayProject.git'
                 bat'mvn test'
                 
