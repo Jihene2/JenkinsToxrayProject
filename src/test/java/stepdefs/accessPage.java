@@ -52,12 +52,8 @@ public void verifier(String arg1){
 	String v= driver.findElement(bar).getText();
 	v= arg1;
 }
-
-public void tacheComplete(){
-        driver.findElement(By.xpath("//*[@id=\"toggle-all\"]")).click();
+public void closeBrowser() {
+	driver.close();
+	
 }
-public void tacheCloturer() {
-	driver.findElement(Com).isDisplayed();
-}
-
 }

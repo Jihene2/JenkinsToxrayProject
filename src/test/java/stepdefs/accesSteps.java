@@ -36,30 +36,15 @@ public class accesSteps {
 
 
 	@Then("^the writen (.*) will be added to the list$")
-	public void the_writen_ToDo_will_be_added_to_the_list(String arg1) {
+	public void the_writen_ToDo_will_be_added_to_the_list(String arg1) throws InterruptedException {
 		 access.verifier(arg1);
+		
 				
-}
-	// Scenario 2 
-	
-   @Given("user selects the to do")
-     public void user_selects_the_to_do() {
-    	 access.tacheComplete();
-}
-
-      @When("the to do is bared")
-      public void the_to_do_is_bared() {
-       access.tacheCloturer();
-}
-
-      @Then("close window")
-      public void close_window() {
-    	  driver.close();
-       
-}
 	
 	
 }	
+
+}
 
 
 	

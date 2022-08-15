@@ -15,8 +15,4 @@ Feature: Acces to the website
       | todo    | todo1    | todo2     |
       | Etudier | analyser | soumettre |
 
-  @tag1 @tag2
-  Scenario: when user clicks on the todo the to do should be removed
-    Given user selects the to do
-    When the to do is bared
-    Then close window
+  
