@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@scenario"
+      "name": "@TALAC-814"
     }
   ]
 });
@@ -15,7 +15,7 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@tag1"
+      "name": "@TEST_TALAC-816"
     }
   ]
 });
@@ -74,10 +74,10 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@scenario"
+      "name": "@TALAC-814"
     },
     {
-      "name": "@tag1"
+      "name": "@TEST_TALAC-816"
     }
   ]
 });

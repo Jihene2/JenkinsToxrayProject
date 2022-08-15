@@ -3,8 +3,8 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-08-15T13:07:14.066Z",
-        "line": 16,
+        "start_timestamp": "2022-08-15T13:40:13.143Z",
+        "line": 17,
         "name": "verify that the user can create a checklist",
         "description": "",
         "id": "acces-to-the-website;verify-that-the-user-can-create-a-checklist;;2",
@@ -13,10 +13,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6995000000,
+              "duration": 8261000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "browser is open user put the link of the website",
             "match": {
               "location": "stepdefs.accesSteps.openBrowser()"
@@ -25,10 +25,10 @@
           },
           {
             "result": {
-              "duration": 384000000,
+              "duration": 253000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "write Etudier and clicks enter",
             "match": {
               "arguments": [
@@ -43,10 +43,10 @@
           },
           {
             "result": {
-              "duration": 105000000,
+              "duration": 134000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "write analyser and clicks enter",
             "match": {
               "arguments": [
@@ -61,10 +61,10 @@
           },
           {
             "result": {
-              "duration": 124000000,
+              "duration": 132000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "write soumettre and clicks enter",
             "match": {
               "arguments": [
@@ -79,10 +79,10 @@
           },
           {
             "result": {
-              "duration": 52000000,
+              "duration": 64000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "the writen Etudier will be added to the list",
             "match": {
               "arguments": [
@@ -97,10 +97,10 @@
           },
           {
             "result": {
-              "duration": 28000000,
+              "duration": 32000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "the writen analyser will be added to the list",
             "match": {
               "arguments": [
@@ -115,10 +115,10 @@
           },
           {
             "result": {
-              "duration": 49000000,
+              "duration": 31000000,
               "status": "passed"
             },
-            "line": 12,
+            "line": 13,
             "name": "the writen soumettre will be added to the list",
             "match": {
               "arguments": [
@@ -134,10 +134,10 @@
         ],
         "tags": [
           {
-            "name": "@scenario"
+            "name": "@TALAC-814"
           },
           {
-            "name": "@tag1"
+            "name": "@TEST_TALAC-816"
           }
         ]
       }
@@ -149,7 +149,7 @@
     "uri": "file:src/test/resources/Features/Access.feature",
     "tags": [
       {
-        "name": "@scenario",
+        "name": "@TALAC-814",
         "type": "Tag",
         "location": {
           "line": 1,

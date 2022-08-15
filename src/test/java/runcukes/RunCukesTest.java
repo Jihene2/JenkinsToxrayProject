@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/Features", strict=true , glue="stepdefs" , tags="@scenario",
+        features = "src/test/resources/Features", strict=true , glue="stepdefs" ,
         		plugin = {"pretty","html:target/HtmlReports","json:target/jihene.json"}
 		)
 
