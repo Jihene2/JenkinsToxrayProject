@@ -1,8 +1,8 @@
-@TALAC-814
+@PAR-2
 Feature: Acces to the website
 
 
-	@TEST_TALAC-816
+	@TEST_PAR-10
   Scenario Outline: verify that the user can create a checklist
     Given browser is open user put the link of the website
     When write <todo> and clicks enter
