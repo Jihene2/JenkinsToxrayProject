@@ -12,7 +12,7 @@ pipeline {
                 jiraComment body: 'this is from jenkins', issueKey: 'TALAC-816'
                 git branch: 'main', credentialsId: 'MyGitHub', url: 'https://github.com/Jihene2/JenkinsToxrayProject.git'
                 bat'mvn test'
-                step([$class: 'XrayImportBuilder', endpointName: '', importFilePath: 'target/jihene.json', importInParallel: 'false', serverInstance: 'CLOUD-451b35e9-535d-4f52-bc37-28f4215cf1ea'])
+                step([$class: 'XrayImportBuilder', endpointName: '/cucumber', importInParallel: 'false', serverInstance: 'CLOUD-451b35e9-535d-4f52-bc37-28f4215cf1ea'])
                 
             }
          }
