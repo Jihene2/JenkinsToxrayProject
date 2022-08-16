@@ -22,6 +22,13 @@ pipeline {
                step([$class: 'XrayExportBuilder', credentialId: '', filePath: 'src/test/resources/Features/', issues: 'PAR-9', serverInstance: 'CLOUD-451b35e9-535d-4f52-bc37-28f4215cf1ea'])
             }
          }   
+        
+         stage('cucumber report') {
+            steps { 
+                
+               cucumber buildStatus: 'null', customCssFiles: '', customJsFiles: '', failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
+            }
+         }  
    
             
      }
