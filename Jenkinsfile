@@ -14,6 +14,10 @@ pipeline {
                 bat'mvn test'
                 step([$class: 'XrayImportBuilder', endpointName: '/junit', importFilePath: 'target/surefire-reports/TEST-runcukes.RunCukesTest.xml', importInParallel: 'false', importToSameExecution: 'false', projectKey: 'PAR', serverInstance: 'CLOUD-451b35e9-535d-4f52-bc37-28f4215cf1ea', testExecKey: 'PAR-2'])
                 
+           stage('Import') {
+            steps { 
+                
+               step([$class: 'XrayExportBuilder', credentialId: '', filePath: 'src/test/resources/Features/', issues: 'PAR-9', serverInstance: 'CLOUD-451b35e9-535d-4f52-bc37-28f4215cf1ea'])
    
             }
         }
