@@ -21,9 +21,9 @@ pipeline {
                 
                step([$class: 'XrayExportBuilder', credentialId: '', filePath: 'src/test/resources/Features/', issues: 'PAR-9', serverInstance: 'CLOUD-451b35e9-535d-4f52-bc37-28f4215cf1ea'])
             }
-           
+         }   
    
-            }
-        }
+            
+     }
 }
         
