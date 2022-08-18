@@ -1,5 +1,5 @@
 @PAR-120
-Feature: Acces to the website
+Feature: the website
 
 
 	@TEST_PAR-10
